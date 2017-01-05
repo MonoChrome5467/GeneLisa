@@ -293,7 +293,7 @@ function init() {
             goalctx.drawImage(base_image, 0, 0);
 
         };
-        base_image.src = './mona.png';
+        base_image.src = './fatfingererr.png';
 
         /**
          * Generate Random Chromosomes for the initial generation
@@ -385,6 +385,6 @@ function breed() {
     /**
      * update generation and fitness
      * */
-    document.getElementById("gen").innerHTML = "Generation = " + generation;
-    document.getElementById("fit").innerHTML = "Fitness = " + fit * 100 + "%";
+    document.getElementById("gen").innerHTML = "目前已經進化到第 " + generation + " 代";
+    document.getElementById("fit").innerHTML = "適應值為 " + fit * 100 + " %";
 }
